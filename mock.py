@@ -76,4 +76,4 @@ class Transaction(object):
 if __name__ == "__main__":
     mock = Mock()
     mock.set_property('get_count').with_params(2,4,3).then(200)
-    print(mock.get_count(4,3) == 200)
+    print(mock.get_count(2,4,3) == 200)
