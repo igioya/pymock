@@ -1,15 +1,4 @@
 import inspect
-class A(object):
-
-	def __init__(self, b, c):
-		self._b = b
-		self._c = c
-	
-	def b(self):
-		return self._b
-	
-	def c(self):
-		return self._c
 
 class Mock(object):
 	
@@ -31,11 +20,6 @@ class Mock(object):
 
 
 if __name__ == "__main__":
-    #print("HOla")
-    #f = Foo()
-    #print(f.explicit_method())
-    #print(f.imcit_method('an arg', 'another arg', keyword='something'))
-
     mock = Mock()
     mock.when_its_called('papa', 'pepe')
     print(mock.papa())
